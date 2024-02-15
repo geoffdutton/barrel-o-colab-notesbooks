@@ -1,5 +1,8 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
 	"features": {
 		"ghcr.io/itsmechlark/features/redis-server:1": {
 			"version": "7"
@@ -8,11 +11,32 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"donjayamanne.python-extension-pack"
+				"batisteo.vscode-django",
+				"cweijan.dbclient-jdbc",
+				"cweijan.vscode-redis-client",
+				"donjayamanne.python-environment-manager",
+				"donjayamanne.python-extension-pack",
+				"GitHub.codespaces",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.github-vscode-theme",
+				"GitHub.vscode-pull-request-github",
+				"KevinRose.vsc-python-indent",
+				"ms-azuretools.vscode-docker",
+				"ms-python.debugpy",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"njpwerner.autodocstring",
+				"wholroyd.jinja"
 			],
 			"settings": {
-                "workbench.colorTheme": "Visual Studio Dark"
-            }
+				"workbench.colorTheme": "Visual Studio Dark"
+			}
 		}
 	}
 }
