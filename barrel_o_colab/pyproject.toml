@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "barrel-o-colab"
+version = "0.0.2"
+description = "common things I use in colab notebooks"
+authors = ["Geoff Dutton <g.dutton@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.1.7"
+langchain-openai = "^0.0.6"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+ipython = "^8.21.0"
+ipywidgets = "^8.1.2"
+black = {extras = ["jupyter"], version = "^24.2.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
