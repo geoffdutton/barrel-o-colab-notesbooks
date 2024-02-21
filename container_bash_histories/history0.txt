@@ -1,0 +1,18 @@
+# this should already
+pip install -U pip
+pip install poetry
+
+
+18  cd notebooks/
+20  pip install -r requirements.txt 
+23  gh copilot suggest "save bash history to a file for later examination"
+
+24  gh auth login --web -h github.com
+26  unset GITHUB_TOKEN
+27  echo $GITHUB_TOKEN
+28  gh auth login --web -h github.com
+29  gh copilot suggest "save bash history to a file for later examination"
+30  history | tail
+
+31  mkdir container_bash_histories
+32  history > container_bash_histories/history0.txt
